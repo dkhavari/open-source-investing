@@ -76,6 +76,6 @@ print len(equity_two_ten_sec_avg)
 
 # Now calculate the means and, ultimately, correlation...
 mean_one = float(sum(equity_one_ten_sec_avg) / float(len(equity_one_ten_sec_avg)))
-mean_two float(sum(equity_two_ten_sec_avg) / float(len(equity_two_ten_sec_avg)))
+mean_two = float(sum(equity_two_ten_sec_avg) / float(len(equity_two_ten_sec_avg)))
 
 
