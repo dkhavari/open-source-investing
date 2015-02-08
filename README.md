@@ -11,4 +11,4 @@ Added Thus Far
 --------------
 1. Collections of intraday data taken directly from NASDAQ.
 2. Analysis of intraday volatility of price movements.
-3. Algorithms for calculating correlation coefficients for heterogeneous vectors on an intraday basis.
+3. Algorithms for calculating correlation coefficients between heterogeneous vectors on an intraday basis.
