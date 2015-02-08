@@ -9,8 +9,6 @@ import time
 import Quandl
 import sys
 
-# Arguments: ticker days
-
 # Some stuff to get the right range of data.
 seed = time.strftime("%Y-%m-%d")
 finish = datetime.datetime.strptime(seed, '%Y-%m-%d')
