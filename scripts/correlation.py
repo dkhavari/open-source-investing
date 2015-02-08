@@ -1,4 +1,5 @@
 from tsvprocessing import tsv_to_tuple_list
+from pandas import Series
 import datetime as dt
 import time
 import sys
@@ -66,16 +67,38 @@ bottom_bound = top_bound - decrement
 equity_one_ten_sec_avg = make_grouped_second_prices(equity_one, top_bound, bottom_bound, decrement)
 equity_two_ten_sec_avg = make_grouped_second_prices(equity_two, top_bound, bottom_bound, decrement)
 
-print equity_one_ten_sec_avg
-print len(equity_one_ten_sec_avg)
+# Create the pandas series.
+one = Series(equity_one_ten_sec_avg)
+two = Series(equity_two_ten_sec_avg)
 
-print '\n\n\n\n\n\n\n\n\n\n'
+# Compute Covariance.
+covariance = one.cov(two)
 
-print equity_two_ten_sec_avg
-print len(equity_two_ten_sec_avg)
+# Compute standard deviations.
+one_stddev = one.std()
+two_stddev = two.std()
 
-# Now calculate the means and, ultimately, correlation...
-mean_one = float(sum(equity_one_ten_sec_avg) / float(len(equity_one_ten_sec_avg)))
-mean_two = float(sum(equity_two_ten_sec_avg) / float(len(equity_two_ten_sec_avg)))
+# Correlation coefficient...
+correlation_coefficient = covariance/(one_stddev*two_stddev)
+
+print correlation_coefficient
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
