@@ -9,9 +9,8 @@ import re
 tsvin = open(sys.argv[1],'rb')
 tsvin = csv.reader(tsvin, delimiter='\t')
 
-for row in tsvin:
-	print row
-quit()
+# for row in tsvin:
+# 	print row
 
 # Build up price, time data arrays
 times = []
