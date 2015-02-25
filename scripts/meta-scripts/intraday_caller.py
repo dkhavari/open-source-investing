@@ -11,4 +11,4 @@ f = open(filename, 'r')
 # Call the script with the appropriate filename etc.
 for line in f:
 	ticker = str(line).strip('\n')
-	os.system('python ' + target_script + ' ' + ticker + ' > ' + ticker + '-2-23-2015.tsv')
+	os.system('python ' + target_script + ' ' + ticker + ' > ' + ticker + '-2-24-2015.tsv')
