@@ -22,7 +22,14 @@ for i in xrange(1, 14):
 		
 		# Edited recently to count downwards from the highest time bracket to get the TSV in the right order.
 		url = "http://www.nasdaq.com/symbol/" + str(ticker) + "/time-sales?time=" + str(14-i) + "&pageno=" + str(page)
-		r = requests.get(url)
+
+		# Make this very robust...
+		while True:
+			try:
+				r = requests.get(url)
+			except:
+				continue
+			break
 
 		# Process the HTML to prepare for data extraction.
 		soup = BeautifulSoup(r.text)
