@@ -1,0 +1,7 @@
+setup.py
+cfscrape/__init__.py
+cloudflare_scrape.egg-info/PKG-INFO
+cloudflare_scrape.egg-info/SOURCES.txt
+cloudflare_scrape.egg-info/dependency_links.txt
+cloudflare_scrape.egg-info/requires.txt
+cloudflare_scrape.egg-info/top_level.txt

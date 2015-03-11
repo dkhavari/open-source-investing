@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: cloudflare-scrape
+Version: 1.1
+Summary: A simple Python module to bypass Cloudflare's anti-bot page
+Home-page: https://github.com/Anorov/cloudflare-scrape
+Author: Anorov
+Author-email: anorov.vorona@gmail.com
+License: UNKNOWN
+Download-URL: https://github.com/Anorov/cloudflare-scrape/tarball/1.0
+Description: UNKNOWN
+Keywords: cloudflare,scraping
+Platform: UNKNOWN
